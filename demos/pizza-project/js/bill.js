@@ -2,6 +2,7 @@ var total = 0;
 
 
 	function bill(){
+		cancelValues();
 		size();
 		veggies();
 		meats();
@@ -17,13 +18,13 @@ var total = 0;
 		var size = document.querySelector('input[name = "size"]:checked').value; 
 		
 		if (size == "personal") {
-			sizeTotal = 10;
+			sizeTotal = 6;
 		} else if (size == "medium") {
-			sizeTotal = 20;
+			sizeTotal = 10;
 		} else if (size == "large") {
-			sizeTotal = 30;
-		}else if (size == "extra-large") {
-			sizeTotal = 40;
+			sizeTotal = 14;
+		}else if (size == "extra large") {
+			sizeTotal = 16;
 		};
 
 		document.getElementById('size-price').innerHTML = "$ " + parseFloat(sizeTotal).toFixed(2);
@@ -151,6 +152,10 @@ var total = 0;
 				document.getElementById('card2').reset();
 				document.getElementById('card3').reset();
 				document.getElementById('card4').reset();
+				document.getElementById('meats-price').innerHTML = " ";
+				document.getElementById('meats-checked').innerHTML =" ";
+				document.getElementById('veggies-price').innerHTML = " ";
+				document.getElementById('veggies-checked').innerHTML =" ";
 				
 			};
 
@@ -159,6 +164,7 @@ var total = 0;
 				document.getElementById('meats-checked').innerHTML =" ";
 				document.getElementById('veggies-price').innerHTML = " ";
 				document.getElementById('veggies-checked').innerHTML =" ";
+			
 
 				}
 			
