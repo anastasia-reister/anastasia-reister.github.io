@@ -204,8 +204,8 @@
 	        <a class="nav-link white-text" href="#product-list">Products</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link white-text" href="./index.html">
-	        	<img src="./img/russia-flag-square-icon-128.png"  height="25" class="d-inline-block  my-auto" alt="">
+	        <a class="nav-link white-text" href="./index.html" >
+	        	<img src="./img/russia-flag-square-icon-128.png"  height="25" class="d-inline-block  my-auto" alt="" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
 	    	</a>
 	      </li>
 	      <li class="nav-item">
@@ -266,7 +266,7 @@
 	<div class="row px-5">
 		
 	    <div  >
-	    	<span class="text-black-50-text">	
+	    	<span class="text-black-50-text z-depth-100	">	
 	    	ASPO is a metal manufacturing company fabricating metal components and ready to use products made to order for virtually any range of customers. With over 25 years in business, we have the experience and expertise to take on jobs of all sizes, it's no wonder we've become the leading custom metal fabricator in the Republic of Moldova. The  size of production and warehouse facilities grants our company the ability to satisfy equally well the needs of a private project as well as of an industrial-scale enterprise. We've earned trust of our customers and built a client base of over a 1000 enterprises in Moldova and beyond. At the moment from the company warehouse, ASPO is ready to offer more than 300 types of metal-roll products. We continue to maintain our position as a leader in the specialty fabricating industry by constantly improving with continuous education and equipment update. We welcome any kind of cooperation and ready to consider your offers.  </span>
 		
 		</div>
@@ -286,13 +286,13 @@
                 <div class="card">
                   <img class="card-img-top product-img" src="./img/gallery/3.JPG" alt="Card image cap">
                   <div class="card-body">
-                    <h5 class="card-title">Металлоконструкции для строительства и строительных работ </h5>
+                    <h5 class="card-title">Metal constructions for construction and building projects</h5>
                     <p class="card-text">
                       <ul>
-                      	<li>Металлоконструкции каркасные пространственные</li>
-                      	<li>Металлоконструкции несущие (опорные) сборные</li>
-                      	<li>Металлоконструкции легкие по спецификации заказчика </li>
-                      	<li>Металлоконструкции строительные стальные по спецификации заказчика</li>
+                      	<li>Metal frame construction</li>
+                      	<li>Load bearing metal constructions</li>
+                      	<li>Light metal constructions made to order</li>
+                      	<li>Stainless steel building metal constructions made to order</li>
                       </ul>
                     </p>
                     
@@ -302,18 +302,18 @@
                 <div class="card">
                   <img class="card-img-top product-img" src="./img/gallery/6.JPG" alt="Card image cap">
                   <div class="card-body">
-                    <h5 class="card-title">Элементы металлоконструкций для строительства и строительных работ</h5>
+                    <h5 class="card-title">Metal construction components for construction and building projects </h5>
                      <p class="card-text">
                       <ul>
-                      	<li>Балки металлические сварные</li>
-                      	<li>Балки металлические арочные</li>
-                      	<li>Балки решетчатые стальные, фермы</li>
-                      	<li>Балки составные двутавровые со сплошной стенкой, стальные</li>
-                      	<li>Балки и ригели металлические железобетонных междуэтажных перекрытий</li>
-                      	<li>Фермы металлические</li>
-                      	<li>Фермы стропильные металлические</li>
-                      	<li>Обрешетка для крыш металлическая </li>
-                      	<li>Арки металлические</li>
+                      	<li>Welded metal beams</li>
+                      	<li>Metal arch girder</li>
+                      	<li>Stainless steel lattice girders, roof trusses</li>
+                      	<li>Stainless steel plate girders with web plates</li>
+                      	<li>Metal girders and collar beams for ferroconcrete floors</li>
+                      	<li>Metal roof truss</li>
+                      	<li>Metal rafter roof truss</li>
+                      	<li>Metal roof boarding, lathing </li>
+                      	<li>Metal arches</li>
                       </ul>
                     </p>
 
@@ -470,7 +470,11 @@
   <!-- JQuery -->
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js">
+  		$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+  </script>
   <!-- Bootstrap core JavaScript -->
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
@@ -481,6 +485,7 @@
 <script>
     baguetteBox.run('.tz-gallery');
 </script>
+
  
 
 
